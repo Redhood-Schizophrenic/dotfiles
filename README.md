@@ -47,6 +47,13 @@ cp /etc/X11/xinit/xinitrc ~/.xinitrc
 
 # 🚀 Home Folder Structure
 
+10. Set wallpaper to full background
+-- Save as .fehbg
+```sh
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/shado/Downloads/wal6.jpg' 
+```
+
 
 ```yaml
 /
