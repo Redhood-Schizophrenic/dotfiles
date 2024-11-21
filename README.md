@@ -43,17 +43,16 @@ git clone https://github.com/Redhood-Schizophrenic/dotfiles.git
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 ```
 
-9. Finally Set up the folder structure as given below:
-
-# 🚀 Home Folder Structure
-
-10. Set wallpaper to full background
+9. Set wallpaper to full background
 -- Save as .fehbg
 ```sh
 #!/bin/sh
 feh --no-fehbg --bg-fill '/home/shado/Downloads/wal6.jpg' 
 ```
 
+10. Finally Set up the folder structure as given below:
+
+# 🚀 Home Folder Structure
 
 ```yaml
 /
@@ -64,7 +63,10 @@ feh --no-fehbg --bg-fill '/home/shado/Downloads/wal6.jpg'
 │   └── polybar/
 │   └── sxhkd/
 ├── .xinitrc
+├── .fehbg
 ├── .bashrc
 │   
 ```
+
+
 
