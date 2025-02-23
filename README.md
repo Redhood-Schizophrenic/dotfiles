@@ -13,7 +13,7 @@ sudo pacman -S base-devel bash-completion unzip make clangd ntfs-3g dunst sof-fi
 
 3. Install GUI related packages
 ```sh 
-sudo pacman -S bspwm sxhkd neovim polybar dmenu tmux kitty xorg xorg-xinit pcmanfm make clangd redshift python-pywal neofetch xrandr arandr
+sudo pacman -S bspwm sxhkd neovim polybar dmenu tmux kitty xorg xorg-xinit pcmanfm make clangd redshift python-pywal neofetch xrandr arandr picom
 ```
 
 4. Dark Mode

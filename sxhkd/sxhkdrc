@@ -156,8 +156,8 @@ alt + d
 
 # Fixing my SHIT :<
 super + d
-  firefox; \
-  dunstify -t 1100 "SHIT Firefox is Launched :0"
+  google-chrome-stable; \
+  dunstify -t 1100 "Google Chrome is Launched :0"
 
 alt + l 
   ~/.config/scripts/lock.sh

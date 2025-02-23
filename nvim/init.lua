@@ -237,6 +237,23 @@ require('lazy').setup({
 		},
 	},
 
+	-- Readme UI generator
+	{
+		"ellisonleao/glow.nvim",
+		config = true,
+		cmd = "Glow"
+	},
+	{
+		"toppair/peek.nvim",
+		event = { "VeryLazy" },
+		build = "deno task --quiet build:fast",
+		config = function()
+			require("peek").setup()
+			vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
+			vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
+		end,
+	},
+
 	{
 		-- Highlight, edit, and navigate code
 		'nvim-treesitter/nvim-treesitter',
@@ -644,6 +661,11 @@ require("lushwal").add_reload_hook(hook)
 
 require("bufferline").setup()
 
+-- Readme in Web
+require('peek').setup({
+	app = 'browser',
+});
+
 local opts = { buffer = 0 }
 vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
 vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
@@ -679,6 +701,8 @@ vim.keymap.set("n", "<C-c>", "<cmd>bd<CR>")
 
 vim.keymap.set("n", "<A-3>", "<cmd>:ToggleTerm<CR>")
 vim.keymap.set("n", "<A-f>", "<cmd>:ToggleTerm direction=float<CR>")
+vim.keymap.set("n", "<C-g>", "<cmd>:PeekOpen<CR>")
+vim.keymap.set("n", "<C-g>", "<cmd>:PeekClose<CR>")
 
 -- Neovide / GUI Configuration
 
