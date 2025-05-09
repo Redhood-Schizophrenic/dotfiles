@@ -1,3 +1,4 @@
+
 #
 # wm independent hotkeys
 #
@@ -156,8 +157,14 @@ alt + d
 
 # Fixing my SHIT :<
 super + d
-  google-chrome-stable; \
-  dunstify -t 1100 "Google Chrome is Launched :0"
+  firefox; \
+  dunstify -t 1100 "Firefox is Launched :0"
+
+# Change Wallpaper
+super + alt + w
+  ~/.config/scripts/changeWal.sh; \
+  dunstify -t 1100 "Wallpaper Changed :)"
 
 alt + l 
   ~/.config/scripts/lock.sh
+ ~/.config/scripts/lock.sh
